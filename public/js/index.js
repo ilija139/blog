@@ -1,6 +1,9 @@
 (function() {
+        mixpanel.track("Page Load", {"Basic page load": true});
         $('#emailForm').submit(function() {
+            mixpanel.track("Email button clicked", {"Success": false});
             postToGoogle();
+            mixpanel.track("Email button clicked", {"Success": true});
             $('#formContainer').html('<h3>Thank you!</h3>');
             return false;
         });
