@@ -1,5 +1,9 @@
 (function() {
-        var target_date = new Date("Jul 1, 2016").getTime();
+        $('#form').submit(function() {
+            postToGoogle();
+            return true;
+        });
+        var target_date = new Date("Jul 10, 2016").getTime();
          
         var days, hours, minutes, seconds, countdown = document.getElementById("countdown");
          
@@ -22,3 +26,23 @@
          
         }, 1000);
 })();
+
+function postToGoogle() {
+
+   var txtEmailVal = $('#txtEmail').val();
+   
+   $.ajax({
+      url: "https://docs.google.com/forms/d/1St-6wN5okhONOEZGN2qvHtiwyZwWSsHMvQ5piM0Sp1M/formResponse",
+      data: {"entry.646964978": txtEmailVal},
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+          0: function() {
+             console.log(0);
+          },
+          200: function() {
+             console.log(200);
+          }
+      }
+   });
+}
