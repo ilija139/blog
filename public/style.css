@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -57,7 +56,7 @@ div#main{
 }
 .soon {
     position:absolute;
-    width: 450px;
+    width: 520px;
     height: 270px;
     left:0; 
     right:0;
