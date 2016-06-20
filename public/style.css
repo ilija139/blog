@@ -137,3 +137,10 @@ input{
     top: 60%;
     color: #ffffff;
 }
+
+div#formContainer h3 {
+   color: white;
+   font-family: lato;
+   font-size: 2em;
+   text-align: center;
+}
