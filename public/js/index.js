@@ -1,6 +1,7 @@
 (function() {
         $('#emailForm').submit(function() {
             postToGoogle();
+            $('#formContainer').html('<h3>Thank you!</h3>');
             return false;
         });
         var target_date = new Date("Jul 10, 2016").getTime();
