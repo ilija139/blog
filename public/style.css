@@ -48,12 +48,16 @@ body{
 	transition: ease-in-out all 300ms;
 }
 div#main{
+	transition: ease-in-out all 300ms;
+   position: absolute;
+   width:100%;
+   height:100%;
    background: -webkit-linear-gradient(bottom right,#4cddff,#3b9aca 10%,#2d6ca5 20%,#2a5291 27%,#283d81 35%,#222654 50%,#1e1635 63%,#0c0010 93%,#000);
    background: linear-gradient(to top left,#4cddff,#3b9aca 10%,#2d6ca5 20%,#2a5291 27%,#283d81 35%,#222654 50%,#1e1635 63%,#0c0010 93%,#000);
 }
 .soon {
     position:absolute;
-    width: 600px;
+    width: 450px;
     height: 270px;
     left:0; 
     right:0;
@@ -121,6 +125,7 @@ input{
 .count {
     position:relative;
     margin-bottom:6%;
+    right: 8%;
     font-family: 'Lato';
 }
 .clock {
