@@ -3,7 +3,7 @@
         $('#emailForm').submit(function() {
             mixpanel.track("Email button clicked", {"Success": false});
             postToGoogle();
-            mixpanel.track("Email button clicked", {"Success": true});
+            mixpanel.track("Email submitted", {"Success": true});
             $('#formContainer').html('<h3>Thank you!</h3>');
             return false;
         });
