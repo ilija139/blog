@@ -25,8 +25,8 @@
             minutes = parseInt(seconds_left / 60);
             seconds = parseInt(seconds_left % 60);
             
-            countdown.innerHTML = days + "d, " + hours + "h, "
-            + minutes + "m, " + seconds + "s ";  
+            countdown.innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";  
          
         }, 1000);
 })();
