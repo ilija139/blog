@@ -1,7 +1,7 @@
 (function() {
         $('#form').submit(function() {
             postToGoogle();
-            return true;
+            return false;
         });
         var target_date = new Date("Jul 10, 2016").getTime();
          
