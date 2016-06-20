@@ -1,5 +1,5 @@
 (function() {
-        $('#form').submit(function() {
+        $('#emailForm').submit(function() {
             postToGoogle();
             return false;
         });
