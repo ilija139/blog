@@ -1,37 +1,26 @@
----
-layout: default
-title: Home
----
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep Learning Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="public/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="soon">
+		<h1>Coming Soon</h1>
+		<p> 		 
+			Add your email below to get notified. 
+		</p>
+		<div class="count">
+		    <h1 id="countdown" class="clock"></h1>
+		    <h3>To Go Live !</h3> 
+		</div>
+        <form>
+			<input type="email" name="email" placeholder="Enter your email">
+         
+			<input type="submit">
+		</form>	
+	</div>
+	<script src="public/js/index.js"></script>
+</body>
+</html>
