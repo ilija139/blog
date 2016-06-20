@@ -38,10 +38,8 @@ function postToGoogle() {
       dataType: "xml",
       statusCode: {
           0: function() {
-             console.log(0);
           },
           200: function() {
-             console.log(200);
           }
       }
    });
