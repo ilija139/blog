@@ -5,6 +5,8 @@
             postToGoogle();
             var email = this[0].value
             mixpanel.track("Email submitted", {"Success" : true, "$email" : email});
+            mixpanel.identify(email);
+            mixpanel.people.set({"$email":email});
             $('#formContainer').html('<h3>Thank you!</h3>');
             return false;
         });
