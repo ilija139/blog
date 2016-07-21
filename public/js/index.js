@@ -10,7 +10,7 @@
             $('#formContainer').html('<h3>Thank you!</h3>');
             return false;
         });
-        var target_date = new Date("Jul 30, 2016").getTime();
+        var target_date = new Date("Aug 30, 2016").getTime();
          
         var days, hours, minutes, seconds, countdown = document.getElementById("countdown");
          
