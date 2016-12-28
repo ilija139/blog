@@ -10,6 +10,7 @@
             $('#formContainer').html('<h3>Thank you!</h3>');
             return false;
         });
+        /**
         var target_date = new Date("Jan 01, 2017").getTime();
          
         var days, hours, minutes, seconds, countdown = document.getElementById("countdown");
@@ -32,6 +33,7 @@
             + minutes + "m " + seconds + "s ";  
          
         }, 1000);
+        */
 })();
 
 function postToGoogle() {
